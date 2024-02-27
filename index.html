@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevRádio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./devradio.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <audio id="radio" src="https://servidor35-3.brlogic.com:8158/live?source=website"></audio>
+
+    <header class="menus-top">
+        <nav class="menu1">
+            <ul>
+                <li>
+                    <a class="amenu" href="#">Início</a>
+                </li>
+                <li>
+                    <a class="amenu" href="#playlist">Playlist</a>
+                </li>
+            </ul>
+        </nav>
+        <img src="./devradio.png" alt="logo">
+        <nav class="menu2">
+            <ul>
+                <li>
+                    <a class="amenu" href="https://www.linkedin.com/in/geovanilobo/">Redes Sociais</a>
+                </li>
+                <li>
+                    <a  class="amenu" href="#sobre">Sobre</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container-player">
+        <div class="player">
+            <i class="fas fa-play" id="playPause"></i>
+            <i class="fas fa-forward" id="forward"></i>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+        </div>
+        <p id="musicTitle"></p>
+
+    </section>
+
+    <main>
+        <section class="chat">
+            <h1 id="h1xat">INTERAJA</h1>
+            <div id="#xat">
+                <iframe src="https://xat.com/embed/chat.php#id=220526041&gn=DevRadioARadiododesenvolvedor" width="650"
+                    height="486" frameborder="0" scrolling="no"></iframe>
+                <br>
+                <small><a target="_BLANK"></a></small>
+            </div>
+        </section>
+
+        <section class="Playlist">
+            <h2 class="h2playlist" id="playlist">MINHA PLAYLIST DO DIA</h2>
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/7IzeU2RF5pT0R0ZLV34c7u?utm_source=generator" width="70%"
+                height="700" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </section>
+
+        <section class="sobre">
+            <div>
+                <h1 id="sobre">Sobre</h1>
+                <p>Bem-vindo à Dev Rádio!
+
+                    Somos uma web rádio apaixonada por música de todos os gêneros. Oferecemos uma variedade de programas e entrevistas exclusivas para animar o seu dia. Sintonize-se e deixe-nos ser a trilha sonora da sua vida.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/geovanilobo/">Geovani Lobo</a></p>
+    </footer>
+
+</body>
+<script src="player.js">
+</script>
+
+</html>
